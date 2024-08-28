@@ -1,4 +1,4 @@
-﻿@model IEnumerable<AplicacaoMVCLinq.Models.Cliente>
+﻿@model IEnumerable<Clientes.Models.Cliente>
 @{
     ViewData["Title"] = "Listar Clientes";
 }
@@ -19,11 +19,11 @@
         @foreach (var cliente in Model)
         {
             <tr>
-                <td>@Cliente.ClienteId</td>
-                <td>@Cliente.Nome</td>
-                <td>@Cliente.Email</td>
-                <td>@Cliente.Telefone</td>
-                <td>@Cliente.DataNasc</td>
+                <td>@cliente.Id</td>
+                <td>@cliente.Nome</td>
+                <td>@cliente.Email</td>
+                <td>@cliente.Telefone</td>
+                <td>@cliente.DataNasc</td>
             </tr>
         }
     </tbody>
